@@ -63,7 +63,7 @@ a::after{
     background-color:mediumaquamarine;
     height: 3px;
     width: 0;
-    left: 0;
+    left: 2px;
     bottom: -10px;
     transition: .3s;
 }
