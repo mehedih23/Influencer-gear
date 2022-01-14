@@ -1,0 +1,82 @@
+/* fonts styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* common styles */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    margin: 20px 0px;
+    padding: 20px 0;
+    width: 1200px;
+
+}
+
+
+/* nav-bar styles */
+.nav-bar{
+    margin: 0 auto;
+    height: 60px;
+    align-items: center;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo h1{
+text-transform: uppercase;
+cursor: pointer;
+
+}
+
+.nav-item ul{
+display: flex;
+position: relative;
+}
+
+.nav-item ul li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 3px 16px;
+    cursor: pointer;
+       
+}
+
+.nav-item ul li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: .5;
+
+}
+
+/* Underline hover animation start */
+a::after{
+    content: "";
+    position: absolute;
+    background-color:mediumaquamarine;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+}
+
+
+a:hover::after{
+    width: 100%;
+}
+
+/* Underline hover animation end */
+
+
+
+
+
+
