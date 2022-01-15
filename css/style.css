@@ -449,6 +449,7 @@ footer p{
     }
     .products{
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
     }
     .earning-method{
         display: grid;
@@ -461,6 +462,34 @@ footer p{
     }
     .earning-details h2{
         font-size: 25px;
+    }
+    @keyframes moving-image {
+        0%{content: url(../images/main-camera.png);
+            width: 440px;
+            height:410px;
+            top: 0px;
+            background-image: url(../images/Circle\ design.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        100%{
+            content: url(../images/iphone_12.png);
+            width: 440px;
+            height:410px;
+            top: 0px;
+            background-image: url(../images/Circle\ design.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        100%{
+            content: url(../images/macbook-air.png);
+            width: 440px;
+            height:410px;
+            top: 0px;
+            background-image: url(../images/Circle\ design.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        } 
     }
 }
 
