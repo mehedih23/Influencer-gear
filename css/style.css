@@ -15,6 +15,9 @@ body{
 
 }
 
+.highlight{
+    color: mediumaquamarine;
+}
 
 /* nav-bar styles */
 .nav-bar{
@@ -56,14 +59,16 @@ position: relative;
 
 }
 
-/* Underline hover animation start */
+/* =====================================
+    Underline hover animation start
+======================================== */
 a::after{
     content: "";
     position: absolute;
     background-color:mediumaquamarine;
     height: 3px;
     width: 0;
-    left: 2px;
+    left: 0px;
     bottom: -10px;
     transition: .3s;
 }
@@ -73,10 +78,62 @@ a:hover::after{
     width: 100%;
 }
 
-/* Underline hover animation end */
+/* =====================================
+    Underline hover animation end
+======================================== */
 
+.header{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.header-info{
+    width: 530px;
+    height: 300px;
+}
 
+.header-title{
+    font-size: 52px;
+    color: #3a3a3a;
+}
 
+.header-details{
+    font-size: 18px;
+    line-height: 1.6em;
+    color: #3a3a3a;
+}
 
+.header-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    width: 180px;
+    padding: 8px 16px;
+    border-radius: 25px;
+    background-color: mediumaquamarine;
+    color: white;
+outline: 0;
+border: none;
+transition: .2s linear;
+}
+.header-btn:hover{
+    border: 2px solid mediumaquamarine;
+    background-color: white;
+    color: mediumaquamarine;
+}
 
+.header-img{
+    position: relative;
+}
+.header-img::after{
+    content: url(../images/Circle\ design.svg);
+    height: 130px;
+    width: 130px;
+    position: absolute;
+   top: -30px;
+   left: -30px;
+   z-index: -50;
+}
