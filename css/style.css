@@ -392,6 +392,9 @@ footer p{
         padding: 0 10px;
 
     }
+    .brand-logo img{
+        margin: 10px;
+    }
     .earning-image img{
         width: 100%;
     }
