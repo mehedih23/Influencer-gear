@@ -87,6 +87,7 @@ a:hover::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .header-info{
@@ -125,10 +126,52 @@ transition: .2s linear;
     color: mediumaquamarine;
     cursor: pointer;    
 }
-
+    .header-img img{
+        width: 100%;
+    }
 .header-img{
     position: relative;
-    margin-bottom: 100px;
+     /* padding-bottom: 100px; */
+    animation-name: moving-image;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving-image {
+    0%{content: url(../images/main-camera.png);
+        width: 440px;
+        height: 414px;
+        /* top: -30px;
+        left: -30px; */
+        top: 0px;
+       
+        background-image: url(../images/Circle\ design.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    50%{
+        content: url(../images/iphone_12.png);
+        width: 440px;
+        height: 414px;
+        /* top: -30px;
+        left: -30px; */
+        top: 0px;
+        background-image: url(../images/Circle\ design.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    100%{
+        content: url(../images/macbook-air.png);
+        width: 440px;
+        height: 414px;
+        /* 
+        left: -30px; */
+        top: 0px;
+        background-image: url(../images/Circle\ design.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 .header-img::after{
     content: url(../images/Circle\ design.svg);
