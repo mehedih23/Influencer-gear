@@ -364,6 +364,7 @@ footer p{
     }
     .header-title{
         font-size: 35px;
+        margin-top: 25px;
     }
     .header-img img{
        width: 100%; 
@@ -389,7 +390,7 @@ footer p{
     }
     .earning-method p{
         width: 100%;
-        padding: 0 10px;
+       
 
     }
     .brand-logo img{
