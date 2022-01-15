@@ -82,7 +82,9 @@ a::after{
 a:hover::after{
     width: 100%;
 }
-
+#respo-bar{
+    display: none;
+} 
 /* =====================================
     Underline hover animation end
 ======================================== */
@@ -121,9 +123,9 @@ a:hover::after{
     border-radius: 25px;
     background-color: mediumaquamarine;
     color: white;
-outline: 0;
-border: none;
-transition: .2s linear;
+    outline: 0;
+    border: none;
+    transition: .2s linear;
 }
 .header-btn:hover{
     border: 2px solid mediumaquamarine;
@@ -287,14 +289,13 @@ transition: .2s linear;
     font-size: 18px;
     width: 140px;
     padding: 8px 16px;
-    
     background-color: mediumaquamarine;
     color: white;
-outline: 0;
-border: none;
-transition: .2s linear;
-margin: 10px 0;
-cursor: pointer; 
+    outline: 0;
+    border: none;
+    transition: .2s linear;
+    margin: 10px 0;
+    cursor: pointer; 
 }
 
 
@@ -376,8 +377,7 @@ footer p{
         
        flex-wrap: wrap;
     }
-    .products
-   {
+    .products{
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         justify-content: center;
@@ -432,7 +432,37 @@ footer p{
 }
 
 
+/* For Tablet Device */
+@media only screen and (min-width: 689px) and (max-width: 992px){
+    .container{
+        width:100%;
+        
+    }
+    .header-title{
+        font-size: 30px;
+    }
+    .nav-item ul li {
+        margin-left: 0px;
+    }
+    .nav-item ul li a{
+        font-size: 18px;
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .earning-method{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
 
+    .earning-details p{
+        width: 97%;
+    }
+    .earning-details h2{
+        font-size: 25px;
+    }
+}
 
 
 
